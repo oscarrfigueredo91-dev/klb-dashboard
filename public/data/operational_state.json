@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "OPS-KLB-2026-001",
+  "generated_at": "2026-06-14T07:00:00Z",
+  "system_status": {
+    "operational": true,
+    "mode": "pilot",
+    "deployment_phase": "pilot_1_project",
+    "pilot_start_date": "2026-06-13",
+    "note": "Pilot deployment — 1 project actively monitored. Full portfolio onboarding pending 7-day success criteria."
+  },
+  "active_projects_summary": {
+    "total_active": 18,
+    "in_construction": 5,
+    "in_preconstruction": 6,
+    "in_discovery": 7,
+    "pilot_monitored": 1
+  },
+  "last_morning_briefing": {
+    "date": "2026-06-14",
+    "briefing_id": "BREF-KLB-2026-001",
+    "status": "complete"
+  },
+  "last_eod_update": {
+    "date": null,
+    "submitted_by": null,
+    "status": "pending_first_run"
+  },
+  "engines": [
+    { "id": "capital",      "label": "Capital Engine",      "status": "GREEN",  "last_run": "2026-06-14", "version": "v3.0.0" },
+    { "id": "construction", "label": "Construction Engine", "status": "GREEN",  "last_run": "2026-06-14", "version": "v3.0.0" },
+    { "id": "ame",          "label": "Asset Management",    "status": "GREEN",  "last_run": "2026-06-14", "version": "v1.2.0" },
+    { "id": "ir",           "label": "Investor Relations",  "status": "GREEN",  "last_run": "2026-06-14", "version": "v4.0.0" },
+    { "id": "com",          "label": "Communications",      "status": "GREEN",  "last_run": "2026-06-14", "version": "v3.0.0" },
+    { "id": "loop",         "label": "Loop Engine",         "status": "GREEN",  "last_run": "2026-06-14", "version": "v3.1.0" },
+    { "id": "sie",          "label": "Self-Improvement",    "status": "GREEN",  "last_run": "2026-06-12", "version": "v6.0.0" },
+    { "id": "mge",          "label": "Memory Governance",   "status": "GREEN",  "last_run": "2026-06-12", "version": "v1.0.0" },
+    { "id": "lil",          "label": "Loop Intelligence",   "status": "YELLOW", "last_run": "2026-06-12", "version": "v1.0.0", "note": "Awaiting 4 weekly LILTA runs for LIL-2 gate" }
+  ],
+  "open_flags": [],
+  "pending_actions": [
+    {
+      "action_id": "ACT-001",
+      "description": "Generate first production Morning Briefing",
+      "owner": "JARVIS",
+      "priority": "high",
+      "due": "2026-06-14"
+    },
+    {
+      "action_id": "ACT-002",
+      "description": "Validate all briefing data against project records",
+      "owner": "Oscar Figueredo",
+      "priority": "high",
+      "due": "2026-06-14"
+    }
+  ]
+}

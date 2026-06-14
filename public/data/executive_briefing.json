@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "bref_id": "BREF-KLB-2026-001",
+  "generated_at": "2026-06-14T07:00:00Z",
+  "briefing_date": "2026-06-14",
+  "briefing_type": "daily",
+
+  "headline": {
+    "system_status": "YELLOW",
+    "system_status_reason": "3 items need your attention — draw pending, cabinet supplier unconfirmed, capital gates open",
+    "requires_attention": true
+  },
+
+  "kpis": [
+    { "id": "open_risks",        "label": "Open Risks",          "value": 3,          "unit": "count", "status": "RED",    "trend": null, "meta": "1 financial · 2 schedule" },
+    { "id": "pending_decisions", "label": "Pending Decisions",   "value": 0,          "unit": "count", "status": "GREEN",  "trend": null, "meta": "No decisions pending" },
+    { "id": "active_projects",   "label": "Active Projects",     "value": 1,          "unit": "count", "status": "GREEN",  "trend": null, "meta": "Pilot · 18 total portfolio" },
+    { "id": "open_gates",        "label": "Capital Gates",       "value": 2,          "unit": "count", "status": "YELLOW", "trend": null, "meta": "CAP-GATE-001 · CAP-GATE-002" },
+    { "id": "pipeline_value",    "label": "Pipeline Total",      "value": 20000000,   "unit": "USD",   "status": "GREEN",  "trend": null, "meta": "1 deal in Capital Formation" },
+    { "id": "cash_position",     "label": "Cash Position",       "value": "Critical", "unit": null,    "status": "RED",    "trend": null, "meta": "Draw 4 pending · <5 days coverage" }
+  ],
+
+  "pending_gates": [
+    {
+      "gate_id": "CAP-GATE-001",
+      "engine": "capital",
+      "entity_id": "CSTK-KLB-2026-001",
+      "entity_name": "323 & 331 23rd St — Boutique Hotel",
+      "description": "Authorize capital formation — $20M total capitalization",
+      "priority": "HIGH",
+      "hours_pending": 55
+    },
+    {
+      "gate_id": "CAP-GATE-002",
+      "engine": "capital",
+      "entity_id": "CSTK-KLB-2026-001",
+      "entity_name": "323 & 331 23rd St — Boutique Hotel",
+      "description": "Approve capital stack structure and authorize lender/investor outreach",
+      "priority": "HIGH",
+      "hours_pending": 55
+    }
+  ],
+
+  "active_flags": [],
+
+  "pipeline_snapshot": {
+    "total_deals": 1,
+    "total_value_usd": 20000000,
+    "stages": [
+      { "stage": 1, "label": "Screening",        "count": 0, "value_usd": 0 },
+      { "stage": 2, "label": "Due Diligence",     "count": 0, "value_usd": 0 },
+      { "stage": 3, "label": "Capital Formation", "count": 1, "value_usd": 20000000 },
+      { "stage": 4, "label": "Cap. Committed",    "count": 0, "value_usd": 0 },
+      { "stage": 5, "label": "Construction",      "count": 0, "value_usd": 0 },
+      { "stage": 6, "label": "Stabilization",     "count": 0, "value_usd": 0 },
+      { "stage": 7, "label": "Operations",        "count": 0, "value_usd": 0 },
+      { "stage": 8, "label": "Exit Ready",        "count": 0, "value_usd": 0 }
+    ]
+  },
+
+  "investor_health": {
+    "total_active": 0,
+    "strong": 0,
+    "healthy": 0,
+    "at_risk": 0,
+    "lapsed": 0,
+    "highest_severity": "NONE"
+  },
+
+  "communication_health": {
+    "total_contacts": 0,
+    "healthy": 0,
+    "watch": 0,
+    "at_risk": 0,
+    "critical": 0,
+    "highest_severity": "NONE"
+  },
+
+  "recommended_actions": [
+    {
+      "rank": 1,
+      "action": "Follow up Draw 4 ($12,500) — client approval pending",
+      "reason": "Cash position critical — less than 5 days coverage without draw approval",
+      "urgency": "HIGH",
+      "linked_entity": "PROJ-KLB-2026-001"
+    },
+    {
+      "rank": 2,
+      "action": "Confirm cabinet supplier by Jun 16",
+      "reason": "Blocks granite install and next draw — Aug 30 completion at risk",
+      "urgency": "HIGH",
+      "linked_entity": "PROJ-KLB-2026-001"
+    },
+    {
+      "rank": 3,
+      "action": "Approve CAP-GATE-001 — capital formation 323 & 331 23rd St",
+      "reason": "Deal blocked — cannot begin debt/equity outreach without gate clearance",
+      "urgency": "MEDIUM",
+      "linked_entity": "CSTK-KLB-2026-001"
+    }
+  ]
+}

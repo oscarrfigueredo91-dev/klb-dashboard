@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-06-14T07:00:00Z",
+  "generated_by": "JARVIS",
+  "workspace": "KLB",
+  "sections": [
+    { "id": "executive_briefing",  "label": "Morning Briefing", "file": "executive_briefing.json",   "enabled": true },
+    { "id": "division_health",     "label": "Division Health",  "file": "division_health_signal.json","enabled": true },
+    { "id": "operational_state",   "label": "System Status",    "file": "operational_state.json",     "enabled": true }
+  ],
+  "projects": [
+    {
+      "id": "PROJ-KLB-2026-001",
+      "file": "projects/PROJ-KLB-2026-001.json",
+      "name": "1306 W 8th Street",
+      "enabled": true
+    }
+  ],
+  "divisions": [],
+  "reports": []
+}

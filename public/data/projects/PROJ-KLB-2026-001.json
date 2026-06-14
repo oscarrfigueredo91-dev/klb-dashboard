@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "PROJ-KLB-2026-001",
+  "name": "1306 W 8th Street",
+  "type": "new_construction",
+  "status": "YELLOW",
+  "stage": "construction",
+  "location": "Plant City, FL",
+  "client": "Private Client",
+  "last_updated": "2026-06-14T07:00:00Z",
+
+  "progress": {
+    "phases_complete": 80,
+    "phases_total": 114,
+    "pct_complete": 62,
+    "current_phase": "Carpentry / Tiling",
+    "target_completion": "2026-08-30",
+    "completion_at_risk": true
+  },
+
+  "kpis": [
+    { "id": "pct_complete",     "label": "% Complete",       "value": "62%",      "unit": null,   "status": "YELLOW" },
+    { "id": "budget",           "label": "Contract Value",   "value": 185000,     "unit": "USD",  "status": "GREEN"  },
+    { "id": "ar_outstanding",   "label": "AR Outstanding",   "value": 12500,      "unit": "USD",  "status": "RED",   "note": "Draw 4 — pending client approval" },
+    { "id": "margin",           "label": "Proj. Margin",     "value": "8.2%",     "unit": null,   "status": "YELLOW","note": "Below 10% target" },
+    { "id": "schedule_float",   "label": "Schedule Float",   "value": "At Risk",  "unit": null,   "status": "RED"   },
+    { "id": "target_date",      "label": "Target Delivery",  "value": "Aug 30",   "unit": null,   "status": "YELLOW" }
+  ],
+
+  "this_week": [
+    "Tiling in progress — phase 80 of 114",
+    "Confirm cabinet supplier by Jun 16",
+    "Schedule ext. paint + roof coat crew by Jun 27"
+  ],
+
+  "attention_items": [
+    "Draw 4 ($12,500) pending client approval — follow up by Jun 20",
+    "Cabinet supplier unconfirmed — blocks granite install + next draw",
+    "Ext. paint + roof coat not started — Aug 30 completion at risk"
+  ],
+
+  "financial": [
+    { "label": "Contract Value",    "value": "$185,000",  "status": null },
+    { "label": "AR Outstanding",    "value": "$12,500",   "status": "alert",  "note": "Draw 4 pending" },
+    { "label": "Projected Margin",  "value": "8.2%",      "status": "watch",  "note": "Target: 10%" },
+    { "label": "Next Draw",         "value": "$12,500",   "status": "watch",  "note": "Pending approval" }
+  ],
+
+  "active_flags": [
+    {
+      "flag_id": "FLAG-CON-001",
+      "flag_type": "schedule_risk",
+      "severity": "HIGH",
+      "description": "Ext. paint + roof coat not started — Aug 30 target at risk"
+    },
+    {
+      "flag_id": "FLAG-CON-002",
+      "flag_type": "supplier_unconfirmed",
+      "severity": "MEDIUM",
+      "description": "Cabinet supplier unconfirmed — blocks granite install and next draw"
+    }
+  ]
+}

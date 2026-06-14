@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-06-14T07:00:00Z",
+  "signal_source": "pilot_manual",
+  "divisions": [
+    {
+      "division_id": "construction",
+      "division_name": "Construction",
+      "health_score": 55,
+      "status": "YELLOW",
+      "status_reason": "Draw pending · Aug 30 completion at risk",
+      "active_flags_count": 2,
+      "highest_flag_severity": "HIGH",
+      "pending_decisions_count": 0,
+      "active_flags_summary": [
+        {
+          "flag_id": "FLAG-CON-001",
+          "flag_type": "schedule_risk",
+          "severity": "HIGH",
+          "description": "Ext. paint + roof coat not started — Aug 30 target at risk",
+          "linked_entity_id": "PROJ-KLB-2026-001"
+        },
+        {
+          "flag_id": "FLAG-CON-002",
+          "flag_type": "supplier_unconfirmed",
+          "severity": "MEDIUM",
+          "description": "Cabinet supplier unconfirmed — blocks granite install and next draw",
+          "linked_entity_id": "PROJ-KLB-2026-001"
+        }
+      ],
+      "pending_decisions_summary": [],
+      "top_risk": {
+        "risk_description": "Ext. paint + roof coat crew not scheduled — Aug 30 delivery at risk",
+        "severity": "HIGH",
+        "linked_entity_id": "PROJ-KLB-2026-001"
+      },
+      "cash_impact_usd": 12500,
+      "data_as_of": "2026-06-14T07:00:00Z",
+      "notes": "Pilot — manually seeded from PROJ-KLB-2026-001 records"
+    },
+    {
+      "division_id": "capital",
+      "division_name": "Capital",
+      "health_score": 50,
+      "status": "YELLOW",
+      "status_reason": "Cash < 5 days · follow up Draw 4",
+      "active_flags_count": 1,
+      "highest_flag_severity": "HIGH",
+      "pending_decisions_count": 2,
+      "active_flags_summary": [
+        {
+          "flag_id": "FLAG-CAP-001",
+          "flag_type": "cash_critical",
+          "severity": "HIGH",
+          "description": "Draw 4 ($12,500) pending client approval — less than 5 days cash coverage",
+          "linked_entity_id": "CSTK-KLB-2026-001"
+        }
+      ],
+      "pending_decisions_summary": [
+        {
+          "decision_id": "CAP-GATE-001",
+          "description": "Authorize capital formation — $20M Boutique Hotel",
+          "deadline": null,
+          "urgency": "HIGH"
+        },
+        {
+          "decision_id": "CAP-GATE-002",
+          "description": "Approve capital stack and begin lender/investor outreach",
+          "deadline": null,
+          "urgency": "HIGH"
+        }
+      ],
+      "top_risk": {
+        "risk_description": "Capital formation for 323 & 331 23rd St blocked — 2 gates pending Oscar approval",
+        "severity": "HIGH",
+        "linked_entity_id": "CSTK-KLB-2026-001"
+      },
+      "cash_impact_usd": 20000000,
+      "data_as_of": "2026-06-14T07:00:00Z",
+      "notes": "Pilot — CSTK-KLB-2026-001 in draft; CAP-GATE-001/002 pending"
+    },
+    {
+      "division_id": "ame",
+      "division_name": "Asset Management",
+      "health_score": null,
+      "status": "INACTIVE",
+      "status_reason": "No assets in operations phase",
+      "active_flags_count": 0,
+      "highest_flag_severity": "NONE",
+      "pending_decisions_count": 0,
+      "active_flags_summary": [],
+      "pending_decisions_summary": [],
+      "top_risk": null,
+      "cash_impact_usd": null,
+      "data_as_of": "2026-06-14T07:00:00Z",
+      "notes": "AME fully certified but no assets in stabilization/operations yet"
+    },
+    {
+      "division_id": "ir",
+      "division_name": "Investor Relations",
+      "health_score": 90,
+      "status": "GREEN",
+      "status_reason": "No active investors — baseline clear",
+      "active_flags_count": 0,
+      "highest_flag_severity": "NONE",
+      "pending_decisions_count": 0,
+      "active_flags_summary": [],
+      "pending_decisions_summary": [],
+      "top_risk": null,
+      "cash_impact_usd": null,
+      "data_as_of": "2026-06-14T07:00:00Z",
+      "notes": "IRE fully certified. No LP investors onboarded yet."
+    },
+    {
+      "division_id": "com",
+      "division_name": "Communications",
+      "health_score": 60,
+      "status": "YELLOW",
+      "status_reason": "1 follow-up overdue",
+      "active_flags_count": 1,
+      "highest_flag_severity": "MEDIUM",
+      "pending_decisions_count": 0,
+      "active_flags_summary": [
+        {
+          "flag_id": "FLAG-COM-001",
+          "flag_type": "follow_up_overdue",
+          "severity": "MEDIUM",
+          "description": "1 contact follow-up past due date",
+          "linked_entity_id": null
+        }
+      ],
+      "pending_decisions_summary": [],
+      "top_risk": null,
+      "cash_impact_usd": null,
+      "data_as_of": "2026-06-14T07:00:00Z",
+      "notes": "COM Engine certified. Pilot contacts pending scoring."
+    },
+    {
+      "division_id": "executive_ops",
+      "division_name": "Executive Ops",
+      "health_score": 85,
+      "status": "GREEN",
+      "status_reason": "System operational · no decisions pending",
+      "active_flags_count": 0,
+      "highest_flag_severity": "NONE",
+      "pending_decisions_count": 0,
+      "active_flags_summary": [],
+      "pending_decisions_summary": [],
+      "top_risk": null,
+      "cash_impact_usd": null,
+      "data_as_of": "2026-06-14T07:00:00Z",
+      "notes": "All 9 engines certified. Pilot mode active."
+    }
+  ]
+}
