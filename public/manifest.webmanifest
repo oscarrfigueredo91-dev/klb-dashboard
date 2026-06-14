@@ -1,15 +1,14 @@
 {
-  "name": "KLB OS — Executive Dashboard",
+  "name": "KLB OS — Executive Command Center",
   "short_name": "KLB OS",
   "description": "KLB OS Executive Command Center — Real-time operational intelligence",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#F7F8FA",
-  "theme_color": "#1B2B5E",
+  "background_color": "#070F1C",
+  "theme_color": "#070F1C",
   "orientation": "portrait-primary",
   "icons": [
-    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
-    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
   ],
   "categories": ["business", "productivity"]
 }
