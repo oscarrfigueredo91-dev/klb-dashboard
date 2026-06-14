@@ -115,7 +115,7 @@ export default function App() {
         </button>
       </nav>
 
-      {tab === 'overview' && <OverviewTab briefing={briefing} divisionHealth={divisionHealth} projects={projects} />}
+      {tab === 'overview' && <OverviewTab briefing={briefing} divisionHealth={divisionHealth} projects={projects} manifest={manifest} />}
       {tab === 'projects' && <ProjectsTab projects={projects} />}
       {tab === 'system'   && <SystemTab ops={operationalState} />}
     </>
@@ -125,7 +125,7 @@ export default function App() {
 /* ──────────────────────────────────────
    OVERVIEW TAB
 ────────────────────────────────────── */
-function OverviewTab({ briefing, divisionHealth, projects }) {
+function OverviewTab({ briefing, divisionHealth, projects, manifest }) {
   const { headline, kpis = [], pending_gates = [], active_flags = [], pipeline_snapshot, recommended_actions = [] } = briefing
   const { system_status, system_status_reason } = headline
   const bannerCfg = STATUS_BANNER[system_status] || STATUS_BANNER.GREEN
